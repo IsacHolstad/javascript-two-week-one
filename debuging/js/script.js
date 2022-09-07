@@ -59,7 +59,7 @@ console.time(); //this start the timer
 console.timeEnd(); //this ends the timer
 
 function counter() {
-    for(let i = 0; i <= 5; i++){
+    for(let i = 0; i <= 1; i++){
         console.log(i)
 
     }
@@ -106,6 +106,18 @@ const resultAverage = getArrAverage(myArray);
 console.log(resultAverage);
 
 
+
+
+//async function getCatyFacts() {
+  //  const response = await fetch("https://catfacts.ninja/facts");
+   // console.log(response)
+  //  const catFacts = await response.json();
+
+//};
+
+//getCatyFacts();
+
+//error happening because async await isnt done
 
 
 
