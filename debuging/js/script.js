@@ -35,11 +35,11 @@ const responsTwo = [
     }
 ];
 
-console.log("respone one:", responsOne);
-console.log("respone two:", responsTwo);
+console.log("respons one:", responsOne);
+console.log("respons two:", responsTwo);
 
 
-const sum = 1+2;
+const sum = 1 + 2;
 
 console.log("my " + "name " + "is " + "isac ");
 console.log(`my name is isac ${sum}`);
@@ -59,7 +59,7 @@ console.time(); //this start the timer
 console.timeEnd(); //this ends the timer
 
 function counter() {
-    for(let i = 0; i <= 1; i++){
+    for (let i = 0; i <= 1; i++) {
         console.log(i)
 
     }
@@ -69,7 +69,7 @@ counter();
 console.timeEnd("mytimer");
 
 //getting the avergae
-let averageOnes = (3 + 5 + 2) /3;
+let averageOnes = (3 + 5 + 2) / 3;
 console.log(averageOnes);
 
 
@@ -77,7 +77,7 @@ console.log(averageOnes);
 
 
 //function getAverage(num1, num2, num3) {
-    //return (num1 + num2 + num3) / 3;
+//return (num1 + num2 + num3) / 3;
 
 
 //}
@@ -102,16 +102,22 @@ function getArrAverage(arr) {
     return total / numberOfItemInArr;
 
 }
+
 const resultAverage = getArrAverage(myArray);
 console.log(resultAverage);
 
 
+const catFactsContainer = document.querySelector(".container");
+
+const myApi = "https://catfacts.ninja/facts";
+console.log(myApi);
+
 
 
 //async function getCatyFacts() {
-  //  const response = await fetch("https://catfacts.ninja/facts");
-   // console.log(response)
-  //  const catFacts = await response.json();
+//  const response = await fetch("https://catfacts.ninja/facts");
+// console.log(response)
+//  const catFacts = await response.json();
 
 //};
 
