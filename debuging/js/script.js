@@ -59,7 +59,7 @@ console.time(); //this start the timer
 console.timeEnd(); //this ends the timer
 
 function counter() {
-    for(let i = 0; i <= 100; i++){
+    for(let i = 0; i <= 5; i++){
         console.log(i)
 
     }
@@ -67,3 +67,45 @@ function counter() {
 console.time("mytimer");
 counter();
 console.timeEnd("mytimer");
+
+//getting the avergae
+let averageOnes = (3 + 5 + 2) /3;
+console.log(averageOnes);
+
+
+//extra
+
+
+//function getAverage(num1, num2, num3) {
+    //return (num1 + num2 + num3) / 3;
+
+
+//}
+//getAverage();
+
+//let myAverage = getAverage(2, 5, 4);
+//console.log("my average", myAverage);
+
+
+const myArray = [1, 2, 3, 4, 5];
+
+function getArrAverage(arr) {
+    var total = 0;
+    for (var i = 0; i < arr.length; i++) {
+        total += arr[i];
+
+    }
+    console.log("total", total);
+    const numberOfItemInArr = arr.length;
+    console.log(numberOfItemInArr);
+    //slet average = total / numberOfItemInArr;
+    return total / numberOfItemInArr;
+
+}
+const resultAverage = getArrAverage(myArray);
+console.log(resultAverage);
+
+
+
+
+
