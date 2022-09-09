@@ -37,14 +37,59 @@
 //console.log(personAdminJSON);
 
 //
+// 1. How t convert javascript to JSON
+//JSON.stringify();
 
-const personJSON = '{"name": "Ola Nordmann", "id": 9, "isAdmin": true}';
+const userDetails = {
+    name: "isac",
+    id: 593,
+    isStudent: true,
+    section: "learning front-end"
+}
+console.log("js format: ", userDetails);
 
-const person = JSON.parse(personJSON);
+const userDataJSON = JSON.stringify(userDetails);
 
-console.log(person);
-// Logs:
-// {name: 'Ola Nordmann', id: 9, isAdmin: true}
+console.log("User details in JSON format: ", userDataJSON);
+
+//json parse used to convert jason data to js data
+const userDataBackToJS = JSON.parse(userDataJSON);
+console.log("Json data converted back to JS: ", userDataBackToJS);
+
+const dogData = '{"name": "albert", "age": 4, "owner": "isac", "id": 501}';
+
+console.log(dogData);
+
+const dogDataToJson = JSON.parse(dogData);
+console.log(dogDataToJson);
+
+
+// Own example
+
+const teslaData = {
+    id: 53020,
+    color: "red",
+    wheelDrive: "awd",
+    interiorColor: "white",
+    owner: "isac",
+    hp: 401,
+    seats: 5,
+    damage: 0,
+    salvagedTitle: 0,
+    previouseOwners: 2,
+    year: 2019
+}
+console.log(teslaData);
+
+const teslaDataToJson = JSON.stringify(teslaData);
+console.log(teslaDataToJson);
+
+const teslaDataBackToJs = JSON.parse(teslaDataToJson);
+console.log(teslaDataBackToJs);
+
+//
+
+
 
 
 

@@ -144,12 +144,12 @@ function loginUserWithToken(){
 
 handelUserLogin({
     name: "isac",
-    role: "dev"
+    role: "dev",
 });
 
 const userLoginData = {
     name: "isac",
-    role: "dev"
+    role: "dev",
 }
 
 console.log(userLoginData);
