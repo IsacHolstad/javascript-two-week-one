@@ -160,4 +160,15 @@ console.log(`my cat is named ${nameOfCat}, he is ${ageOfCat} year old ${breed}`)
 
 
 
+// Own example in break
+
+//const phone = {
+//    id: 34245234,
+//    brand: "Apple",
+//    gb: 258,
+//    color: "black",
+//}
+
+
+
 
