@@ -126,14 +126,15 @@ console.log(x, y);
 //create a string array of names witch contains 4 names
 // and then destruct the first 3 name
 
-const names = ["Hesh", "Linda", "Alex", "Fariad"];
+const names = ["Hesh", "Linda", "Alex", "Fariad", "Isac", "Annabell", "Morty", "Mark", "Ronaldo", "Messi"];
 
 //log :
 //Hesh linda alex
 
-const [a, b, c, d] = names;
-
+const [a, b, c, d, ...others] = names;
+// "...others" will get you the rest of the array
 console.log(a, b, c,);
+console.log(others);
 //logs:
 // Hesh Linda Alex
 
