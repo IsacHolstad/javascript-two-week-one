@@ -139,6 +139,25 @@ console.log(others);
 // Hesh Linda Alex
 
 
+// Skipping parts of array
+//              0  1  2   3  4
+const values = [3, 4, 6, 32, 9];
+
+const [value0, , value2, value3, value4] = values;
+
+console.log("skipping number '4'", value0, value2, value3, value4);
+
+const myCat = {
+    nameOfCat: "Handsome",
+    ageOfCat: "10",
+    typerrr: "Egyptian Mau",
+}
+
+// Using "typerr:breed" allows you to rename an object
+const {nameOfCat, ageOfCat, typerrr:breed} = myCat;
+
+console.log(`my cat is named ${nameOfCat}, he is ${ageOfCat} year old ${breed}`);
+
 
 
 
