@@ -60,6 +60,84 @@ greetUsers(user);
 
 // destructing in arrays
 
+const people = [
+    {
+        name: "isac",
+        age: "20",
+        score: 10
+    },
+    {
+        name: "morten",
+        age: "40",
+        score: 9
+    },
+    {
+        name: "rolf",
+        age: "20",
+        score: 6
+    },
+    {
+        name: "maya",
+        age: "20",
+        score: 1
+    },
+];
+
+// rule condition score  >= 5
+// filtering the winners (people with score over 5) from losers witch have under 5 in score
+
+const winners = people.filter((currentItem) =>{
+    if(currentItem.score >= 5){
+        return true;
+    }
+});
+
+console.log("None destructed way", winners);
+
+// This is the destructed way that looks cleaner and shorted code
+
+const secondWinners = people.filter(({score}) =>{
+    if(score >= 9){
+        return true;
+    }
+});
+
+console.log("Destructed way", secondWinners);
+
+// Destruct from array
+
+//const [
+    //values
+//] = arrayName;
+
+//const [value1, value2]= arrayName;
+//                     0   1   2   3   4   5  indexes
+const streetNumbers = [12, 34, 55, 65, 76, 82];
+
+// 'x' will be the index of 0
+// 'y' will be the index of 1
+
+const [x, y] = streetNumbers;
+
+console.log(x, y);
+// Logs:
+// 12 34
+
+//create a string array of names witch contains 4 names
+// and then destruct the first 3 name
+
+const names = ["Hesh", "Linda", "Alex", "Fariad"];
+
+//log :
+//Hesh linda alex
+
+const [a, b, c, d] = names;
+
+console.log(a, b, c,);
+//logs:
+// Hesh Linda Alex
+
+
 
 
 
